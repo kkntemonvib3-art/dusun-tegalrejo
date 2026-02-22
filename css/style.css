@@ -46,28 +46,68 @@ nav a:hover{
 }
 
 /* HERO */
+/* HERO */
 .hero{
-    height:80vh;
-    background:url('../img/banner.jpg') center/cover no-repeat;
+    position:relative;
+    height:85vh;
+    overflow:hidden;
     display:flex;
     align-items:center;
     justify-content:center;
     text-align:center;
     color:white;
-    position:relative;
 }
 
-.hero::after{
-    content:'';
+/* SLIDER */
+.hero-slider{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+
+.slide{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-position:center;
+    opacity:0;
+    transition:opacity 1.5s ease-in-out;
+}
+
+/* Ganti gambar sesuai folder Anda */
+.slide:nth-child(1){
+    background-image:url('../img/fotokarta.jpg');
+}
+.slide:nth-child(2){
+    background-image:url('../img/fotoibu2kwt.jpg');
+}
+.slide:nth-child(3){
+    background-image:url('../img/fotojamaah.jpg');
+}
+.slide:nth-child(4){
+    background-image:url('../img/fotodemplot.jpg');
+}
+
+.slide.active{
+    opacity:1;
+}
+
+/* Overlay gelap */
+.hero-overlay{
     position:absolute;
     width:100%;
     height:100%;
     background:rgba(0,0,0,0.5);
+    z-index:1;
 }
 
 .hero-content{
     position:relative;
     z-index:2;
+    max-width:800px;
 }
 
 .hero h1{

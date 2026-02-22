@@ -18,3 +18,16 @@ cards.forEach(card => {
     card.style.transform = "translateY(50px)";
     card.style.transition = "all 0.6s ease";
 });
+
+// HERO AUTO SLIDER
+const slides = document.querySelectorAll(".slide");
+let currentSlide = 0;
+
+function showNextSlide(){
+    slides[currentSlide].classList.remove("active");
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add("active");
+}
+
+// Slide berganti setiap 4 detik
+setInterval(showNextSlide, 4000);
