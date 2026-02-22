@@ -46,7 +46,6 @@ nav a:hover{
 }
 
 /* HERO */
-/* HERO */
 .hero{
     position:relative;
     height:85vh;
@@ -117,6 +116,87 @@ nav a:hover{
 .hero p{
     margin-top:15px;
     font-size:18px;
+}
+
+/* ===== TENTANG DUSUN MODERN ===== */
+
+.tentang-section{
+    background:linear-gradient(to right, #ffffff, #f4f7fa);
+}
+
+.tentang-container{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:50px;
+}
+
+.tentang-text{
+    flex:1;
+    min-width:280px;
+}
+
+.tentang-text h2{
+    font-size:32px;
+    color:#1e5631;
+    margin-bottom:20px;
+}
+
+.tentang-text p{
+    margin-bottom:15px;
+    text-align:justify;
+}
+
+/* Statistik */
+.tentang-stats{
+    flex:1;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+    gap:20px;
+}
+
+.stat-card{
+    background:white;
+    padding:25px 15px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.4s;
+}
+
+.stat-card span{
+    font-size:28px;
+}
+
+.stat-card h3{
+    font-size:28px;
+    color:#2e8b57;
+    margin:10px 0 5px;
+}
+
+.stat-card p{
+    font-size:14px;
+    font-weight:500;
+}
+
+.stat-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .tentang-container{
+        flex-direction:column;
+    }
+
+    .tentang-text{
+        text-align:center;
+    }
+
+    .tentang-text p{
+        text-align:center;
+    }
 }
 
 /* SECTION */
