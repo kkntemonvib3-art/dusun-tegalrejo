@@ -30,38 +30,67 @@ header{
 }
 
 /* NAVBAR */
-nav{
-    position:sticky;
-    top:0;
-    background:white;
+.navbar{
+    position: sticky;   /* INI YANG MEMBUAT TETAP */
+    top: 0;
+    z-index: 1000;
+
     display:flex;
-    justify-content:center;
-    gap:30px;
-    padding:15px 0;
-    box-shadow:0 2px 10px rgba(0,0,0,0.08);
-    z-index:1000;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+
+    background:#2e7d32;
+    color:white;
 }
 
-nav a{
+/* MENU */
+.nav-menu{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+/* WARNA LINK PUTIH */
+.nav-menu a{
+    color:white;
     text-decoration:none;
-    color:#1e5631;
-    font-weight:600;
-    transition:.3s;
+    font-weight:500;
+    transition:0.3s;
 }
 
-nav a:hover{
-    color:#2e8b57;
+.nav-menu a:hover{
+    color:#ffd54f;
 }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+/* HAMBURGER */
+.hamburger{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
 }
 
-body{
-    font-family:'Poppins', sans-serif;
-    overflow-x:hidden; /* cegah geser ke samping */
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    .hamburger{
+        display:block;
+    }
+
+    .nav-menu{
+        position:absolute;
+        top:60px;
+        right:0;
+        flex-direction:column;
+        background:#2e7d32;
+        width:200px;
+        display:none;
+        padding:20px;
+    }
+
+    .nav-menu.active{
+        display:flex;
+    }
 }
 
 /* HERO */
@@ -790,17 +819,6 @@ body{
 
     .timeline-content{
         width:100%;
-    }
-}
-
-@media(max-width:600px){
-
-    .profil-section{
-        padding:60px 20px;
-    }
-
-    .profil-box{
-        padding:20px;
     }
 }
 

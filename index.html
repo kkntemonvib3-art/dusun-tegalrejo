@@ -12,20 +12,26 @@
 <body>
 
 <!-- HEADER -->
-<header>
+<header class="main-header">
     <h1>Dusun Tegalrejo</h1>
     <p>Kalurahan Janten | Kapanewon Temon | Kabupaten Kulon Progo</p>
 </header>
 
 <!-- NAVIGATION -->
-<nav>
-    <a href="#beranda">Beranda</a>
-    <a href="#tentang">Tentang</a>
-    <a href="#profil">Profil</a>
-    <a href="#struktur">Struktur</a>
-    <a href="#kegiatan">Kegiatan</a>
-    <a href="#umkm">UMKM</a>
-    <a href="#agenda">Agenda</a>
+<nav class="navbar">
+    <div class="logo">Dusun Tegalrejo</div>
+
+    <ul class="nav-menu" id="navMenu">
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#struktur">Struktur</a></li>
+        <li><a href="#kegiatan">Kegiatan</a></li>
+        <li><a href="#umkm">UMKM</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+    </ul>
+
+    <div class="hamburger" id="hamburger">☰</div>
 </nav>
 
 <!-- HERO -->
@@ -433,6 +439,15 @@
     </div>
     <p>© 2026 Dusun Tegalrejo | Website Resmi</p>
 </footer>
+
+<script>
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("navMenu");
+
+hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+});
+</script>
 
 </body>
 </html>
