@@ -289,47 +289,26 @@ header{
     font-weight:600;
 }
 
-/* ===== TIMELINE ===== */
-
-.timeline{
-    position:relative;
-    padding-left:35px;
+/* PROFIL TIMELINE */
+.profil-timeline{
+    padding-left:0px;
 }
 
-.timeline::before{
+.profil-timeline .timeline-item{
+    margin-bottom:20px;
+    position:relative;
+    padding-left:25px;
+}
+
+.profil-timeline .timeline-item::before{
     content:"";
     position:absolute;
     left:0;
-    top:0;
-    width:4px;
-    height:100%;
-    background:#2e8b57;
-    border-radius:4px;
-}
-
-.timeline-item{
-    position:relative;
-    margin-bottom:25px;
-    transition:0.3s ease;
-}
-
-.timeline-item:hover{
-    transform:translateX(5px);
-}
-
-.timeline-dot{
-    position:absolute;
-    left:-7px;
-    top:4px;
-    width:14px;
-    height:14px;
-    background:#1e5631;
+    top:8px;
+    width:12px;
+    height:12px;
+    background:#2e7d32;
     border-radius:50%;
-}
-
-.timeline-item p{
-    margin-left:10px;
-    line-height:1.6;
 }
 
 /* ===== VISI CARD ===== */
