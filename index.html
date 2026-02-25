@@ -23,6 +23,7 @@
         <li><a href="#kegiatan">Kegiatan</a></li>
         <li><a href="#umkm">UMKM</a></li>
         <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#galeri">Galeri</a></li>
     </ul>
 
     <div class="hamburger" id="hamburger">☰</div>
@@ -321,6 +322,15 @@
     </div>
 </section>
 
+<!-- GALERI -->
+<section id="galeri" class="galeri-section">
+    <div class="container">
+        <h2 class="section-title">Galeri Desa</h2>
+        <p class="section-subtitle">Kegiatan-kegiatan yang berlangsung di Dusun Tegalrejo</p>
+        <div class="galeri-grid" id="galeriGrid"></div>
+    </div>
+</section>
+
 <!-- FOOTER -->
 <footer class="site-footer">
 
@@ -410,6 +420,12 @@ hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("active");
 });
 </script>
-
+<div id="lightbox" class="lightbox">
+  <button class="lb-close" onclick="tutupLightbox()">✕</button>
+  <div class="lb-content">
+    <img id="lbImg" src="" alt="">
+    <p id="lbCaption"></p>
+  </div>
+</div>
 </body>
 </html>

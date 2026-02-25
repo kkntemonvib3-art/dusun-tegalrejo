@@ -406,3 +406,40 @@ window.addEventListener('scroll', () => {
     navbar.classList.remove('scrolled');
   }
 });
+
+// DATA GALERI
+// Taruh semua foto di folder img/galeri/
+// Tinggal tambah nama file di sini
+const dataGaleri = [
+  { file: "img/acara/fotodemplot.jpg",  caption: "Foto Demplot" },
+  { file: "img/acara/fotoibu2kwt.jpg",  caption: "Foto Ibu2 KWT" },
+  { file: "img/acara/fotojamaah.jpg",  caption: "Foto Jamaah" }
+];
+
+const galeriGrid = document.getElementById('galeriGrid');
+
+if (galeriGrid) {
+  galeriGrid.innerHTML = dataGaleri.map(foto => `
+  <div class="galeri-item" onclick="bukaLightbox('${foto.file}', '${foto.caption}')">
+    <img src="${foto.file}" alt="${foto.caption}" loading="lazy">
+    <div class="galeri-caption">${foto.caption}</div>
+  </div>
+`).join('');
+}
+
+// LIGHTBOX
+function bukaLightbox(src, caption) {
+  document.getElementById('lbImg').src = src;
+  document.getElementById('lbCaption').textContent = caption;
+  document.getElementById('lightbox').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function tutupLightbox() {
+  document.getElementById('lightbox').classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') tutupLightbox();
+});
