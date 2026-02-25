@@ -11,12 +11,6 @@
 
 <body>
 
-<!-- HEADER -->
-<header class="main-header">
-    <h1>Dusun Tegalrejo</h1>
-    <p>Kalurahan Janten | Kapanewon Temon | Kabupaten Kulon Progo</p>
-</header>
-
 <!-- NAVIGATION -->
 <nav class="navbar">
     <div class="logo">Dusun Tegalrejo</div>
@@ -29,6 +23,7 @@
         <li><a href="#kegiatan">Kegiatan</a></li>
         <li><a href="#umkm">UMKM</a></li>
         <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#galeri">Galeri</a></li>
     </ul>
 
     <div class="hamburger" id="hamburger">☰</div>
@@ -74,25 +69,25 @@
 
             <div class="stat-card">
                 <span>🏘️</span>
-                <h3>5</h3>
+                <h3 id="rt"></h3>
                 <p>RT</p>
             </div>
 
             <div class="stat-card">
                 <span>🏘️</span>
-                <h3>2</h3>
+                <h3 id="rw"></h3>
                 <p>RW</p>
             </div>
 
             <div class="stat-card">
                 <span>👨‍👩‍👧‍👦</span>
-                <h3>78</h3>
+                <h3 id="kk"></h3>
                 <p>Kepala Keluarga</p>
             </div>
 
             <div class="stat-card">
                 <span>👥</span>
-                <h3>268</h3>
+                <h3 id="penduduk"></h3>
                 <p>Jumlah Penduduk</p>
             </div>
 
@@ -171,43 +166,7 @@
         <h2 class="section-title">Struktur Organisasi</h2>
 
         <div class="struktur-grid">
-
-            <!-- KEPALA DUKUH -->
-            <div class="struktur-card utama">
-                <div class="avatar">
-                    <img src="img/kepaladukuh.jpg" alt="Kepala Dukuh">
-                </div>
-                <h3>Kepala Dukuh</h3>
-                <p>Bapak Tyto Bagus Panuntun</p>
-            </div>
-
-            <!-- KARANG TARUNA -->
-            <div class="struktur-card">
-                <div class="avatar">
-                    <img src="img/ketuakarta.jpg" alt="Ketua Karang Taruna">
-                </div>
-                <h3>Ketua Karang Taruna</h3>
-                <p>Saudara Wahyu Rudi Hartono</p>
-            </div>
-
-            <!-- PKK -->
-            <div class="struktur-card">
-                <div class="avatar">
-                    <img src="img/ketuapkk.jpg" alt="Ketua PKK">
-                </div>
-                <h3>Ketua PKK</h3>
-                <p>Ibu Rizki Primayanti</p>
-            </div>
-
-            <!-- KWT -->
-            <div class="struktur-card">
-                <div class="avatar">
-                    <img src="img/ketuakwt.jpg" alt="Ketua KWT">
-                </div>
-                <h3>Ketua KWT</h3>
-                <p>Ibu Suhartati</p>
-            </div>
-
+            <div class="struktur-grid"></div>
         </div>
 
         <p class="struktur-desc">
@@ -283,70 +242,38 @@
 
 <!-- UMKM -->
 <section id="umkm" class="umkm-section">
-    <div class="container">
-        <h2 class="section-title">UMKM Wilayah Tegalrejo</h2>
-
-        <div class="umkm-grid">
-
-            <div class="umkm-card">
-                <div class="umkm-header">
-                    <h3>RT 01</h3>
-                    <span class="badge">1 UMKM</span>
-                </div>
-                <ul>
-                    <li>🍠 Ibu Almaidah – Produksi keripik ketela</li>
-                </ul>
-            </div>
-
-            <div class="umkm-card">
-                <div class="umkm-header">
-                    <h3>RT 02</h3>
-                    <span class="badge">2 UMKM</span>
-                </div>
-                <ul>
-                    <li>💆 Bapak Sugiman – Jasa pijat</li>
-                    <li>🍯 Bapak Mustofa – Madu & parfum</li>
-                </ul>
-            </div>
-
-            <div class="umkm-card">
-                <div class="umkm-header">
-                    <h3>RT 03</h3>
-                    <span class="badge">4 UMKM</span>
-                </div>
-                <ul>
-                    <li>🎍 Lingga Kurniawan – Kandang bambu</li>
-                    <li>🍡 Yuli Purwainingsih – Jajanan pasar</li>
-                    <li>🥣 Ibu Duwimulyani – Growol & makanan tradisional</li>
-                    <li>🍮 Produksi jenang sumsum</li>
-                </ul>
-            </div>
-
-            <div class="umkm-card">
-                <div class="umkm-header">
-                    <h3>RT 04</h3>
-                    <span class="badge">3 UMKM</span>
-                </div>
-                <ul>
-                    <li>🍞 Mas Parwanto – Roti bakar</li>
-                    <li>🧵 Ibu Linda – Toko kelontong & jasa jahit</li>
-                    <li>🏪 Ibu Anis – Toko kelontong</li>
-                </ul>
-            </div>
-
-            <div class="umkm-card">
-                <div class="umkm-header">
-                    <h3>RT 05</h3>
-                    <span class="badge">1 UMKM</span>
-                </div>
-                <ul>
-                    <li>🍩 Ibu Kusparini – Jajanan pasar</li>
-                </ul>
-            </div>
-
-        </div>
-    </div>
+  <div class="container" style="max-width:1200px;margin:auto;">
+    <h2 class="section-title">UMKM Wilayah Tegalrejo</h2>
+    <p class="section-subtitle">Klik nama usaha untuk melihat detail produk</p>
+    <div class="umkm-grid" id="umkmGrid"></div>
+  </div>
 </section>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <div class="modal-img-wrap">
+      <img id="modalGambar" src="" alt=""/>
+      <div class="modal-emoji-fallback" id="modalEmoji"></div>
+      <span class="modal-kategori" id="modalKategori"></span>
+      <button class="modal-close" id="modalClose">✕</button>
+    </div>
+    <div class="modal-body">
+      <p class="modal-rt" id="modalRt"></p>
+      <h2 class="modal-nama" id="modalNama"></h2>
+      <p class="modal-pemilik" id="modalPemilik"></p>
+      <div class="modal-harga" id="modalHarga"></div>
+      <p class="modal-desc" id="modalDesc"></p>
+      <div class="modal-actions">
+        <button class="btn-beli" id="modalBeli">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-8 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg>
+          Hubungi Penjual
+        </button>
+        <button class="btn-tutup" id="modalTutup">Tutup</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <section id="fasilitas" class="fasilitas-section">
     <div class="container">
@@ -389,57 +316,102 @@
 
         <div class="timeline">
 
-            <div class="timeline-item">
-                <div class="timeline-date">
-                    <span class="tanggal">15</span>
-                    <span class="bulan">JUL</span>
-                </div>
-                <div class="timeline-content">
-                    <h3>Musyawarah Dusun</h3>
-                    <p>Rapat koordinasi dan evaluasi program pembangunan dusun.</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-date">
-                    <span class="tanggal">22</span>
-                    <span class="bulan">JUL</span>
-                </div>
-                <div class="timeline-content">
-                    <h3>Kerja Bakti Lingkungan</h3>
-                    <p>Kegiatan gotong royong membersihkan lingkungan dusun.</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-date">
-                    <span class="tanggal">05</span>
-                    <span class="bulan">AGT</span>
-                </div>
-                <div class="timeline-content">
-                    <h3>Pengajian Rutin</h3>
-                    <p>Kegiatan pembinaan spiritual dan silaturahmi warga.</p>
-                </div>
-            </div>
+            <div class="timeline" id="timeline"></div>
 
         </div>
     </div>
 </section>
 
-<!-- FOOTER -->
-<footer>
-    <div class="footer-menu">
-        <a href="#beranda">Beranda</a>
-        <a href="#tentang">Tentang</a>
-        <a href="#profil">Profil</a>
-        <a href="#struktur">Struktur</a>
-        <a href="#kegiatan">Kegiatan</a>
-        <a href="#umkm">UMKM</a>
-        <a href="#agenda">Agenda</a>
+<!-- GALERI -->
+<section id="galeri" class="galeri-section">
+    <div class="container">
+        <h2 class="section-title">Galeri Desa</h2>
+        <p class="section-subtitle">Kegiatan-kegiatan yang berlangsung di Dusun Tegalrejo</p>
+        <div class="galeri-grid" id="galeriGrid"></div>
     </div>
-    <p>© 2026 Dusun Tegalrejo | Website Resmi</p>
-</footer>
+</section>
 
+<!-- FOOTER -->
+<footer class="site-footer">
+
+    <div class="footer-main">
+        <div class="footer-identity">
+            <div class="footer-brand">
+                <h3>Dusun Tegalrejo</h3>
+            </div>
+            <p class="footer-address">
+                Kalurahan Janten, Kapanewon Temon<br>
+                Kabupaten Kulon Progo<br>
+                Daerah Istimewa Yogyakarta
+            </p>
+            <p class="footer-kode"><strong>Kode Poset</strong>55654</p>
+        </div>
+
+        <div class="footer-col">
+            <p class="footer-col-title">Hubungi Kami</p>
+            <div class="footer-contact-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.36 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 5.99 5.99l.96-.96a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                <span>(Nomor Hp yang bis dihubungi)</span>
+            </div>
+            <div class="footer-contact-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="4" width="20" height="16" rx="2"/>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                </svg>
+                <span>(mail yang bisa dihubungi)</span>
+            </div>
+            <div class="footer-socials">
+                <a href="#" class="social-btn" title="Instagram">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="20" rx="5"/>
+                    <circle cx="12" cy="12" r="4"/>
+                    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+                </svg>
+                </a>
+                <a href="#" class="social-btn" title="Facebook">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-btn" title="YouTube">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/>
+                        <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <p class="footer-col-title">Navigasi</p>
+            <nav class="footer-nav">
+                <a href="#beranda">Beranda</a>
+                <a href="#tentang">Tentang</a>
+                <a href="#profil">Profil</a>
+                <a href="#struktur">Struktur</a>
+                <a href="#kegiatan">Kegiatan</a>
+                <a href="#umkm">UMKM</a>
+                <a href="#agenda">Agenda</a>
+            </nav>
+        </div>
+
+        <div class="footer-col">
+            <p class="footer-col-title">Tautan Penting</p>
+            <nav class="footer-nav">
+                <a href="#" target="_blank">Bebas mau kasihkan apa</a>
+                <a href="#" target="_blank">Bebas mau kasihkan apa</a>
+                <a href="#" target="_blank">Bebas mau kasihkan apa</a>
+                <a href="#" target="_blank">Bebas mau kasihkan apa</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Dusun Tegalrejo — Kalurahan Janten, Kapanewon Temon, Kulon Progo</p>
+    </div>
+</footer>
 <script>
 const hamburger = document.getElementById("hamburger");
 const navMenu = document.getElementById("navMenu");
@@ -448,6 +420,12 @@ hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("active");
 });
 </script>
-
+<div id="lightbox" class="lightbox">
+  <button class="lb-close" onclick="tutupLightbox()">✕</button>
+  <div class="lb-content">
+    <img id="lbImg" src="" alt="">
+    <p id="lbCaption"></p>
+  </div>
+</div>
 </body>
 </html>
