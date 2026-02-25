@@ -30,20 +30,28 @@ header{
 }
 
 /* NAVBAR */
-.navbar{
-    position: sticky;   /* INI YANG MEMBUAT TETAP */
-    top: 0;
-    z-index: 1000;
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  gap: 20px; /* ← tambah ini biar logo & menu tidak nempel */
 
-    background:#2e7d32;
-    color:white;
+  background: transparent;
+  transition: background 0.4s ease, box-shadow 0.4s ease;
+  color: white;
 }
 
+.navbar.scrolled {
+  background: #2e7d32;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
 /* MENU */
 .nav-menu{
     display:flex;
