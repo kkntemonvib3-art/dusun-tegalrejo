@@ -100,7 +100,7 @@ const dataUMKM = [
         kategori: "Makanan",
         harga: "Rp 10.000 / bungkus",
         deskripsi: "Keripik ketela renyah buatan rumahan dengan cita rasa gurih dan manis alami. Tersedia dalam beberapa varian rasa. Cocok untuk oleh-oleh khas Tegalrejo.",
-        gambar: "img/umkm/produk/examplekitelaproduk.jpg",   // isi dengan path foto, misal: "img/umkm/keripik.jpg"
+        gambar: "img/keripikketela1.jpg",   // isi dengan path foto, misal: "img/umkm/keripik.jpg"
         kontak: "08XXXXXXXXXX"
       }
     ]
@@ -115,7 +115,7 @@ const dataUMKM = [
         kategori: "Jasa",
         harga: "Rp 50.000 / sesi",
         deskripsi: "Layanan pijat tradisional Jawa berpengalaman. Melayani pijat relaksasi, pijat urut, dan pijat bayi. Bisa panggilan ke rumah.",
-        gambar: "",
+        gambar: "img/jasapijat.jpg",
         kontak: "08XXXXXXXXXX"
       },
       {
@@ -125,7 +125,7 @@ const dataUMKM = [
         kategori: "Produk Lokal",
         harga: "Mulai Rp 35.000",
         deskripsi: "Madu asli hutan dan parfum lokal pilihan. Madu dipanen langsung dari lebah liar, tanpa campuran, kaya manfaat untuk kesehatan.",
-        gambar: "",
+        gambar: "img/madu.jpg",
         kontak: "08XXXXXXXXXX"
       }
     ]
@@ -140,7 +140,7 @@ const dataUMKM = [
         kategori: "Kerajinan",
         harga: "Mulai Rp 150.000",
         deskripsi: "Kerajinan kandang ternak dan furnitur bambu berkualitas. Dibuat dari bambu lokal pilihan, kuat dan tahan lama. Bisa pesan sesuai ukuran.",
-        gambar: "",
+        gambar: "img/kandang.jpg",
         kontak: "08XXXXXXXXXX"
       },
       {
@@ -150,7 +150,7 @@ const dataUMKM = [
         kategori: "Makanan",
         harga: "Mulai Rp 2.000 / pcs",
         deskripsi: "Aneka jajanan pasar tradisional Jawa buatan sendiri setiap hari. Tersedia klepon, onde-onde, lemper, dan berbagai kue basah lainnya.",
-        gambar: "",
+        gambar: "img/jajananpasar.jpg",
         kontak: "08XXXXXXXXXX"
       },
       {
@@ -160,17 +160,17 @@ const dataUMKM = [
         kategori: "Makanan",
         harga: "Mulai Rp 5.000",
         deskripsi: "Growol — makanan tradisional khas Kulon Progo berbahan singkong fermentasi. Sehat, lezat, dan langka. Cocok dimakan dengan lauk gurih.",
-        gambar: "",
+        gambar: "img/growol.jpg",
         kontak: "08XXXXXXXXXX"
       },
       {
         emoji: "🍮",
         nama: "Jenang Sumsum",
-        pemilik: "Warga RT 03",
+        pemilik: "Ibu Umi Tasha",
         kategori: "Makanan",
         harga: "Rp 3.000 / porsi",
         deskripsi: "Jenang sumsum khas Jawa berbahan tepung beras dengan kuah gula merah yang legit. Dibuat segar setiap hari, cocok untuk sarapan.",
-        gambar: "",
+        gambar: "img/jenang.jpg",
         kontak: "08XXXXXXXXXX"
       }
     ]
@@ -185,7 +185,7 @@ const dataUMKM = [
         kategori: "Kuliner",
         harga: "Mulai Rp 8.000",
         deskripsi: "Roti bakar dengan berbagai pilihan topping: coklat, keju, strawberry, dan kombinasi lainnya. Renyah di luar, lembut di dalam.",
-        gambar: "",
+        gambar: "img/rotibakar.jpg",
         kontak: "08XXXXXXXXXX"
       },
       {
@@ -195,7 +195,7 @@ const dataUMKM = [
         kategori: "Jasa & Retail",
         harga: "Jahit mulai Rp 25.000",
         deskripsi: "Toko kelontong lengkap sekaligus melayani jasa jahit pakaian. Menerima jahit baju, celana, seragam, dan permak. Hasil rapi dan tepat waktu.",
-        gambar: "",
+        gambar: "img/jasajahit.jpg",
         kontak: "08XXXXXXXXXX"
       },
       {
@@ -205,7 +205,7 @@ const dataUMKM = [
         kategori: "Retail",
         harga: "Harga pasaran",
         deskripsi: "Toko kelontong menyediakan kebutuhan sehari-hari warga RT 04. Buka setiap hari dari pagi hingga malam.",
-        gambar: "",
+        gambar: "img/tokokelontong.jpg",
         kontak: "08XXXXXXXXXX"
       }
     ]
@@ -220,19 +220,9 @@ const dataUMKM = [
         kategori: "Makanan",
         harga: "Mulai Rp 2.000 / pcs",
         deskripsi: "Beragam jajanan pasar tradisional buatan tangan setiap pagi. Segar, tanpa pengawet, dengan cita rasa otentik khas Jawa.",
-        gambar: "",
+        gambar: "img/jajananpasar.jpg",
         kontak: "08dawdadwadwad"
       },
-      {
-        emoji: "🏪",
-        nama: "Toko Kelontong Rizyu",
-        pemilik: "Ibu Rizky Ayu",
-        kategori: "Retail",
-        harga: "Harga Pasar",
-        deskripsi: "Beragam kebutuhan hidup. Menjual alat alat rumah tangga maupun diluar rumah tangga",
-        gambar: "",
-        kontak: "089526362716"
-      }
     ]
   }
 ];
