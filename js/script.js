@@ -413,6 +413,7 @@ window.addEventListener('scroll', () => {
 const dataGaleri = [
   { file: "img/fotodemplot.jpg",  caption: "Foto Demplot" },
   { file: "img/fotoibu2kwt.jpg",  caption: "Foto Ibu2 KWT" },
+  { file: "img/pengajian.jpg",  caption: "Foto Pengajian" },
   { file: "img/fotojamaah.jpg",  caption: "Foto Jamaah" }
 ];
 
