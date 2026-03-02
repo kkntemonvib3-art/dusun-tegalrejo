@@ -102,6 +102,16 @@ const dataUMKM = [
         deskripsi: "Keripik ketela renyah buatan rumahan dengan cita rasa gurih dan manis alami. Tersedia dalam beberapa varian rasa. Cocok untuk oleh-oleh khas Tegalrejo.",
         gambar: "img/keripikketela1.jpg",   // isi dengan path foto, misal: "img/umkm/keripik.jpg"
         kontak: "08XXXXXXXXXX"
+      },
+      {
+        emoji: "🍠",
+        nama: "D'chik Mantos Chicken & Burger",
+        pemilik: "Bapak Sudarmanto",
+        kategori: "Makanan",
+        harga: "Rp 10.000 / Porsi",
+        deskripsi: "Sajian ayam crispy dan burger lezat dengan cita rasa gurih khas. Dibuat dari bahan pilihan, pas untuk santapan cepat, mengenyangkan, dan favorit semua kalangan.",
+        gambar: "img/burger.jpg",   // isi dengan path foto, misal: "img/umkm/keripik.jpg"
+        kontak: "081578783404"
       }
     ]
   },
@@ -401,9 +411,9 @@ window.addEventListener('scroll', () => {
 // Taruh semua foto di folder img/galeri/
 // Tinggal tambah nama file di sini
 const dataGaleri = [
-  { file: "img/acara/fotodemplot.jpg",  caption: "Foto Demplot" },
-  { file: "img/acara/fotoibu2kwt.jpg",  caption: "Foto Ibu2 KWT" },
-  { file: "img/acara/fotojamaah.jpg",  caption: "Foto Jamaah" }
+  { file: "img/fotodemplot.jpg",  caption: "Foto Demplot" },
+  { file: "img/fotoibu2kwt.jpg",  caption: "Foto Ibu2 KWT" },
+  { file: "img/fotojamaah.jpg",  caption: "Foto Jamaah" }
 ];
 
 const galeriGrid = document.getElementById('galeriGrid');
