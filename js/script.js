@@ -217,6 +217,17 @@ const dataUMKM = [
         deskripsi: "Toko kelontong menyediakan kebutuhan sehari-hari warga RT 04. Buka setiap hari dari pagi hingga malam.",
         gambar: "img/tokokelontong.jpg",
         kontak: "08XXXXXXXXXX"
+      },
+      {
+        emoji: "🏪",
+        nama: "Rife Rajut",
+        pemilik: "Ibu Tri",
+        kategori: "Retail",
+        harga: "Harga pasaran",
+        deskripsi: "Kerajinan Rajut Rife menyediakan aneka produk handmade seperti gantungan kunci dan tas rajut yang unik, cantik, dan berkualitas. Cocok untuk aksesoris pribadi maupun hadiah.",
+        gambar: "img/tasrajut1.jpg",
+        gambar: "img/tasrajut2.jpg",
+        kontak: "08XXXXXXXXXX"
       }
     ]
   },
