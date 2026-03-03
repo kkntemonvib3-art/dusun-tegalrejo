@@ -55,7 +55,7 @@ const strukturOrganisasi = [
   },
   {
     jabatan: "Ketua Karang Taruna",
-    nama: "Saudara Wahyu Rudi Hartono",
+    nama: "Bapak Wahyu Rudi Hartono",
     foto: "img/ketuakarta.jpg",
     utama: false
   },
